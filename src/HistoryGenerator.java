@@ -102,7 +102,7 @@ public class HistoryGenerator {
     }
 
     private static void printMenu() {
-        System.out.println("У нас есть персонажи (" + characters.size() + " шт.), действия (" + actions.size() + " шт.), места (" + places.size() + " шт. \n" +
+        System.out.println("У нас есть персонажи (" + characters.size() + " шт.), действия (" + actions.size() + " шт.), места (" + places.size() + " шт.) \n" +
                 "Выберите пункт:\n" +
                 "1 - Добавить персонажа\n" +
                 "2 - Добавить действие\n" +
