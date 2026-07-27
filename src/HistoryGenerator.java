@@ -53,16 +53,16 @@ public class HistoryGenerator {
                         System.out.println("Недостаточно данных. Невозможно сгенерировать историю");
                         break;
                     }
-                    int randomIntCharacters = random.nextInt(characters.size());
+                    int randomIntCharacters = random.nextInt(characters.size()); //рандомный выбор персонажа
                     String randomCharacter = characters.get(randomIntCharacters);
 
-                    int randomIntActions = random.nextInt(actions.size());
+                    int randomIntActions = random.nextInt(actions.size()); //рандомный выбор действия
                     String randomAction = actions.get(randomIntActions);
 
-                    int randomIntPlaces = random.nextInt(places.size());
+                    int randomIntPlaces = random.nextInt(places.size()); //рандомный выбор места
                     String randomPlace = places.get(randomIntPlaces);
-                    String story = randomCharacter + " " + randomAction + " " + randomPlace;
-                    stories.add(story);
+                    String story = randomCharacter + " " + randomAction + " " + randomPlace; //акумулирование данных
+                    stories.add(story); //добавление сгенерированной истории в хранилище
                     System.out.println("Сгенерированная история: " + story);
                     break;
 
